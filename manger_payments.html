@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        المدفوعات والديون - إدارة محل الموتورات
+    </title>
+
+    <link rel="stylesheet" href="style/payments.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar">
+
+        <div class="shop-info">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <h1>
+                Management Shop
+            </h1>
+
+            <p>
+                نظام إدارة محل الموتورات
+            </p>
+
+        </div>
+
+
+        <nav class="dashboard">
+
+            <h2>
+                القائمة الرئيسية
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        لوحة التحكم
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_mot.html">
+                        الموتورات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_custemer.html">
+                        العملاء
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_sales.html">
+                        المبيعات
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="manger_payments.html">
+                        المدفوعات والديون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_inventory.html">
+                        المخزون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_reports.html">
+                        التقارير
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sitting.html">
+                        الإعدادات
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="logout">
+
+                <a href="#">
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =========================================
+             PAGE HEADER
+        ========================================== -->
+
+        <header class="page-header">
+
+            <div>
+
+                <h2>
+                    المدفوعات والديون
+                </h2>
+
+                <p>
+                    متابعة المدفوعات والديون والفواتير
+                </p>
+
+            </div>
+
+
+            <div class="page-date">
+
+                <label for="payment-date">
+                    التاريخ
+                </label>
+
+                <input
+                    type="date"
+                    id="payment-date"
+                >
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================================
+             BREADCRUMB
+        ========================================== -->
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                الرئيسية
+            </a>
+
+            <span>
+                /
+            </span>
+
+            <span>
+                المدفوعات والديون
+            </span>
+
+        </div>
+
+
+
+        <!-- =========================================
+             FINANCIAL CARDS
+        ========================================== -->
+
+        <section class="payment-statistics">
+
+
+            <!-- إجمالي المبيعات -->
+
+            <article class="card">
+
+                <p class="card-label">
+                    إجمالي المبيعات
+                </p>
+
+                <h3>
+                    450,000,000
+                </h3>
+
+                <span>
+                    قيمة الفواتير
+                </span>
+
+            </article>
+
+
+            <!-- إجمالي المدفوعات -->
+
+            <article class="card">
+
+                <p class="card-label">
+                    إجمالي المدفوعات
+                </p>
+
+                <h3>
+                    351,250,000
+                </h3>
+
+                <span>
+                    المبالغ المستلمة
+                </span>
+
+            </article>
+
+
+            <!-- إجمالي الديون -->
+
+            <article class="card">
+
+                <p class="card-label">
+                    إجمالي الديون
+                </p>
+
+                <h3>
+                    98,750,000
+                </h3>
+
+                <span>
+                    المبالغ المتبقية
+                </span>
+
+            </article>
+
+
+            <!-- إجمالي المتأخرات -->
+
+            <article class="card">
+
+                <p class="card-label">
+                    إجمالي المتأخرات
+                </p>
+
+                <h3>
+                    25,450,000
+                </h3>
+
+                <span>
+                    ديون تجاوزت موعد الاستحقاق
+                </span>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =========================================
+             DEBT SUMMARY
+        ========================================== -->
+
+        <section class="debt-summary">
+
+
+            <div class="summary-title">
+
+                <h2>
+                    ملخص الديون
+                </h2>
+
+                <p>
+                    نظرة سريعة على حالة الديون الحالية
+                </p>
+
+            </div>
+
+
+            <div class="debt-cards">
+
+
+                <!-- الديون الحالية -->
+
+                <article class="debt-card">
+
+                    <div class="debt-icon">
+                        د
+                    </div>
+
+                    <div>
+
+                        <p>
+                            ديون حالية
+                        </p>
+
+                        <strong>
+                            48,300,000
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- المتأخرات -->
+
+                <article class="debt-card">
+
+                    <div class="debt-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <p>
+                            المتأخرات
+                        </p>
+
+                        <strong>
+                            25,450,000
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- خلال 7 أيام -->
+
+                <article class="debt-card">
+
+                    <div class="debt-icon">
+                        7
+                    </div>
+
+                    <div>
+
+                        <p>
+                            ديون خلال 7 أيام
+                        </p>
+
+                        <strong>
+                            12,500,000
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- خلال 30 يوم -->
+
+                <article class="debt-card">
+
+                    <div class="debt-icon">
+                        30
+                    </div>
+
+                    <div>
+
+                        <p>
+                            ديون خلال 30 يوم
+                        </p>
+
+                        <strong>
+                            12,500,000
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             INVOICES
+        ========================================== -->
+
+        <section class="dashboard-card payments-table">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        الفواتير والديون
+                    </h2>
+
+                    <p>
+                        متابعة حالة الفواتير والمدفوعات
+                    </p>
+
+                </div>
+
+
+                <span>
+                    4 فواتير
+                </span>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>#</th>
+
+                            <th>
+                                رقم الفاتورة
+                            </th>
+
+                            <th>
+                                العميل
+                            </th>
+
+                            <th>
+                                تاريخ الفاتورة
+                            </th>
+
+                            <th>
+                                إجمالي الفاتورة
+                            </th>
+
+                            <th>
+                                إجمالي المدفوعات
+                            </th>
+
+                            <th>
+                                المتبقي
+                            </th>
+
+                            <th>
+                                تاريخ الاستحقاق
+                            </th>
+
+                            <th>
+                                الحالة
+                            </th>
+
+                            <th>
+                                الإجراءات
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>
+                                1
+                            </td>
+
+                            <td>
+                                INV-001
+                            </td>
+
+                            <td>
+                                أيمن مصطفى
+                            </td>
+
+                            <td>
+                                2026/08/01
+                            </td>
+
+                            <td>
+                                25,000,000
+                            </td>
+
+                            <td>
+                                15,000,000
+                            </td>
+
+                            <td>
+                                10,000,000
+                            </td>
+
+                            <td>
+                                2026/09/01
+                            </td>
+
+                            <td>
+
+                                <span class="status overdue">
+                                    متأخر
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button>
+                                    عرض
+                                </button>
+
+                                <button>
+                                    دفع
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+                                2
+                            </td>
+
+                            <td>
+                                INV-002
+                            </td>
+
+                            <td>
+                                محمد أحمد
+                            </td>
+
+                            <td>
+                                2026/08/05
+                            </td>
+
+                            <td>
+                                30,000,000
+                            </td>
+
+                            <td>
+                                30,000,000
+                            </td>
+
+                            <td>
+                                0
+                            </td>
+
+                            <td>
+                                -
+                            </td>
+
+                            <td>
+
+                                <span class="status paid">
+                                    مدفوع
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button>
+                                    عرض
+                                </button>
+
+                                <button>
+                                    طباعة
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+                                3
+                            </td>
+
+                            <td>
+                                INV-003
+                            </td>
+
+                            <td>
+                                خالد علي
+                            </td>
+
+                            <td>
+                                2026/08/10
+                            </td>
+
+                            <td>
+                                25,000,000
+                            </td>
+
+                            <td>
+                                15,000,000
+                            </td>
+
+                            <td>
+                                10,000,000
+                            </td>
+
+                            <td>
+                                2026/09/10
+                            </td>
+
+                            <td>
+
+                                <span class="status pending">
+                                    مستحق
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button>
+                                    عرض
+                                </button>
+
+                                <button>
+                                    دفع
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>
+                                4
+                            </td>
+
+                            <td>
+                                INV-004
+                            </td>
+
+                            <td>
+                                عبدالله محمد
+                            </td>
+
+                            <td>
+                                2026/08/15
+                            </td>
+
+                            <td>
+                                40,000,000
+                            </td>
+
+                            <td>
+                                20,000,000
+                            </td>
+
+                            <td>
+                                20,000,000
+                            </td>
+
+                            <td>
+                                2026/09/15
+                            </td>
+
+                            <td>
+
+                                <span class="status pending">
+                                    مستحق
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button>
+                                    عرض
+                                </button>
+
+                                <button>
+                                    دفع
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             RECENT PAYMENTS
+        ========================================== -->
+
+        <section class="dashboard-card recent-payments">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        آخر المدفوعات
+                    </h2>
+
+                    <p>
+                        أحدث عمليات الدفع المسجلة
+                    </p>
+
+                </div>
+
+
+                <span>
+                    آخر العمليات
+                </span>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>#</th>
+
+                            <th>
+                                تاريخ الدفع
+                            </th>
+
+                            <th>
+                                العميل
+                            </th>
+
+                            <th>
+                                الفاتورة
+                            </th>
+
+                            <th>
+                                المبلغ
+                            </th>
+
+                            <th>
+                                طريقة الدفع
+                            </th>
+
+                            <th>
+                                الموظف
+                            </th>
+
+                            <th>
+                                الملاحظات
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                1
+                            </td>
+
+                            <td>
+                                2026/08/20
+                            </td>
+
+                            <td>
+                                أيمن مصطفى
+                            </td>
+
+                            <td>
+                                INV-001
+                            </td>
+
+                            <td>
+                                5,000,000
+                            </td>
+
+                            <td>
+                                نقدي
+                            </td>
+
+                            <td>
+                                أحمد
+                            </td>
+
+                            <td>
+                                دفعة القسط الأول
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                2
+                            </td>
+
+                            <td>
+                                2026/08/19
+                            </td>
+
+                            <td>
+                                محمد أحمد
+                            </td>
+
+                            <td>
+                                INV-002
+                            </td>
+
+                            <td>
+                                10,000,000
+                            </td>
+
+                            <td>
+                                تحويل بنكي
+                            </td>
+
+                            <td>
+                                أحمد
+                            </td>
+
+                            <td>
+                                دفعة جزئية
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                3
+                            </td>
+
+                            <td>
+                                2026/08/18
+                            </td>
+
+                            <td>
+                                خالد علي
+                            </td>
+
+                            <td>
+                                INV-003
+                            </td>
+
+                            <td>
+                                7,500,000
+                            </td>
+
+                            <td>
+                                نقدي
+                            </td>
+
+                            <td>
+                                محمد
+                            </td>
+
+                            <td>
+                                -
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

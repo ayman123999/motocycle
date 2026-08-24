@@ -1,0 +1,581 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 260px;
+    height: 100vh;
+
+    background-color: #172033;
+    color: #ffffff;
+
+    padding: 20px 15px;
+
+    overflow-y: auto;
+
+    box-shadow: -3px 0 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   SHOP INFO
+========================================= */
+
+.shop-info {
+    text-align: center;
+
+    padding: 10px 10px 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2563eb;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.shop-info h1 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.shop-info p {
+    color: #aeb8ca;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.dashboard h2 {
+    color: #8995aa;
+
+    font-size: 13px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+
+    padding: 0 10px;
+}
+
+.dashboard ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.dashboard li a {
+    display: block;
+
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    color: #d7deea;
+
+    font-size: 14px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.dashboard li a:hover {
+    background-color: #26334d;
+
+    color: #ffffff;
+}
+
+
+/* الصفحة الحالية */
+
+.dashboard li:first-child a {
+    background-color: #2563eb;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.logout {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logout a {
+    display: block;
+
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    color: #fca5a5;
+
+    font-size: 14px;
+}
+
+.logout a:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+
+    color: #ef4444;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.main-content {
+    margin-right: 260px;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 22px 25px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.page-header h2 {
+    font-size: 25px;
+
+    margin-bottom: 4px;
+}
+
+.page-header p {
+    color: #8993a4;
+
+    font-size: 13px;
+}
+
+.user-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.user-info span {
+    background-color: #f1f5f9;
+
+    color: #475569;
+
+    padding: 8px 15px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background-color: #ffffff;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.card-title h3 {
+    font-size: 14px;
+
+    font-weight: normal;
+
+    color: #687386;
+
+    margin-bottom: 14px;
+}
+
+.card-value {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 7px;
+
+    margin-bottom: 5px;
+}
+
+.card-value strong {
+    font-size: 28px;
+
+    color: #1f2937;
+}
+
+.card-value span {
+    font-size: 12px;
+
+    color: #7b8494;
+}
+
+.card > p {
+    color: #929baa;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   DASHBOARD CONTENT
+========================================= */
+
+.dashboard-content {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   DASHBOARD CARD
+========================================= */
+
+.dashboard-card {
+    background-color: #ffffff;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.section-header {
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.section-header h2 {
+    font-size: 17px;
+
+    margin-bottom: 3px;
+}
+
+.section-header p {
+    color: #8b95a5;
+
+    font-size: 12px;
+}
+
+.section-header > a {
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.section-header > a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    text-align: right;
+}
+
+thead {
+    background-color: #f8fafc;
+}
+
+th {
+    padding: 13px 15px;
+
+    color: #687386;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #e8ebf0;
+}
+
+td {
+    padding: 14px 15px;
+
+    color: #3f4a5a;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .statistics {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .dashboard-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: auto;
+    }
+
+    .dashboard ul {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 6px;
+    }
+
+    .main-content {
+        margin-right: 0;
+
+        padding: 15px;
+    }
+
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .sidebar {
+        padding: 15px 10px;
+    }
+
+    .dashboard ul {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header {
+        padding: 18px;
+    }
+
+    .page-header h2 {
+        font-size: 21px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card-value strong {
+        font-size: 24px;
+    }
+
+    .section-header {
+        padding: 16px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+} 

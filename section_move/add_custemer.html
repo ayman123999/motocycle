@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../style/add_custemer.css"
+    >
+
+    <title>
+        إضافة عميل - إدارة محل الموتورات
+    </title>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         Sidebar
+    ================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- معلومات المحل -->
+
+        <div class="shop-info">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <h1>
+                Management Shop
+            </h1>
+
+            <p>
+                نظام إدارة محل الموتورات
+            </p>
+
+        </div>
+
+
+        <!-- القائمة الرئيسية -->
+
+        <nav class="dashboard">
+
+            <h2>
+                القائمة الرئيسية
+            </h2>
+
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        لوحة التحكم
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../manger_mot.html">
+                        الموتورات
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../manger_custemer.html">
+                        العملاء
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../manger_sales.html">
+                        المبيعات
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../manger_payments.html">
+                        المدفوعات والديون
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../manger_inventory.html">
+                        المخزون
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../manger_reports.html">
+                        التقارير
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="../sitting.html">
+                        الإعدادات
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- تسجيل الخروج -->
+
+            <div class="logout">
+
+                <a href="#">
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- =================================
+         Main Content
+    ================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================
+             Page Header
+        ================================== -->
+
+        <header class="page-header">
+
+
+            <div>
+
+                <h2>
+                    إضافة عميل
+                </h2>
+
+
+                <p>
+
+                    <a href="index.html">
+                        الرئيسية
+                    </a>
+
+                    /
+
+                    <a href="manger_custemer.html">
+                        العملاء
+                    </a>
+
+                    /
+
+                    إضافة عميل
+
+                </p>
+
+            </div>
+
+
+            <div class="page-actions">
+
+                <a href="../manger_custemer.html">
+                    <button type="button" >
+                      العودة للعملاء
+                    </button>
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             Customer Form
+        ================================== -->
+
+        <section class="customer-form-card">
+
+
+            <!-- عنوان القسم -->
+
+            <div class="section-title">
+
+                <h1>
+                    البيانات الأساسية
+                </h1>
+
+                <p>
+                    أدخل البيانات الأساسية للعميل
+                </p>
+
+            </div>
+
+
+
+            <!-- نموذج العميل -->
+
+            <form
+                class="customer-form"
+                action=""
+                method="post"
+            >
+
+
+                <!-- الاسم -->
+
+                <div class="form-group">
+
+                    <label for="customer-name">
+                        الاسم الكامل
+                    </label>
+
+                    <input
+                        id="customer-name"
+                        name="customer_name"
+                        type="text"
+                        placeholder="أدخل الاسم الكامل"
+                    >
+
+                </div>
+
+
+
+                <!-- الهاتف -->
+
+                <div class="form-group">
+
+                    <label for="customer-phone">
+                        رقم الهاتف
+                    </label>
+
+                    <input
+                        id="customer-phone"
+                        name="customer_phone"
+                        type="tel"
+                        placeholder="أدخل رقم الهاتف"
+                    >
+
+                </div>
+
+
+
+                <!-- الهوية -->
+
+                <div class="form-group">
+
+                    <label for="customer-id">
+                        رقم الهوية
+                    </label>
+
+                    <input
+                        id="customer-id"
+                        name="customer_id"
+                        type="text"
+                        placeholder="أدخل رقم الهوية"
+                    >
+
+                </div>
+
+
+
+                <!-- نوع العميل -->
+
+                <div class="form-group">
+
+                    <label for="customer-type">
+                        نوع العميل
+                    </label>
+
+                    <select
+                        id="customer-type"
+                        name="customer_type"
+                    >
+
+                        <option value="customer">
+                            زبون
+                        </option>
+
+                        <option value="client">
+                            عميل
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- عنوان السكن -->
+
+                <div class="form-group full-width">
+
+                    <label for="customer-address">
+                        عنوان السكن
+                    </label>
+
+                    <input
+                        id="customer-address"
+                        name="customer_address"
+                        type="text"
+                        placeholder="أدخل عنوان السكن"
+                    >
+
+                </div>
+
+
+
+                <!-- ملاحظات -->
+
+                <div class="form-group full-width">
+
+                    <label for="customer-notes">
+                        ملاحظات
+                    </label>
+
+                    <textarea
+                        id="customer-notes"
+                        name="customer_notes"
+                        placeholder="اكتب ملاحظات عن العميل"
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- أزرار -->
+
+                <div class="form-actions">
+
+                    <button
+                        type="submit"
+                        class="save-btn"
+                    >
+                        حفظ العميل
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                    >
+                        إلغاء
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

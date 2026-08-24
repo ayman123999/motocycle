@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        الموتورات - إدارة محل الموتورات
+    </title>
+
+    <link rel="stylesheet" href="style/mot.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         Sidebar
+    ================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- معلومات المحل -->
+
+        <div class="shop-info">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <h1>
+                Management Shop
+            </h1>
+
+            <p>
+                نظام إدارة محل الموتورات
+            </p>
+
+        </div>
+
+
+        <!-- القائمة -->
+
+        <nav class="dashboard">
+
+            <h2>
+                القائمة الرئيسية
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        لوحة التحكم
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_mot.html">
+                        الموتورات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_custemer.html">
+                        العملاء
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_sales.html">
+                        المبيعات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_payments.html">
+                        المدفوعات والديون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_inventory.html">
+                        المخزون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_reports.html">
+                        التقارير
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sitting.html">
+                        الإعدادات
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- تسجيل الخروج -->
+
+            <div class="logout">
+
+                <a href="#">
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- =================================
+         Main Content
+    ================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================
+             Page Header
+        ================================== -->
+
+        <header class="page-header">
+
+            <div>
+
+                <h2>
+                    الموتورات
+                </h2>
+
+                <p>
+
+                    <a href="index.html">
+                        الرئيسية
+                    </a>
+
+                    /
+
+                    الموتورات
+
+                </p>
+
+            </div>
+
+
+            <div class="page-actions">
+
+               <a href="section_move/add_mot.html">
+                    <button type="button">
+                    إضافة موتور جديد
+                    </button>
+              </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             Statistics
+        ================================== -->
+
+        <section class="motor-statistics">
+
+
+            <!-- الصيانة -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        في الصيانة
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        1
+                    </strong>
+
+                    <span>
+                        موتور
+                    </span>
+
+                </div>
+
+                <p>
+                    تحتاج إلى صيانة
+                </p>
+
+            </article>
+
+
+            <!-- المتاحة -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        المتاحة
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        2
+                    </strong>
+
+                    <span>
+                        موتور
+                    </span>
+
+                </div>
+
+                <p>
+                    جاهزة للبيع
+                </p>
+
+            </article>
+
+
+            <!-- المباعة -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        المباعة
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        3
+                    </strong>
+
+                    <span>
+                        موتور
+                    </span>
+
+                </div>
+
+                <p>
+                    تم بيعها
+                </p>
+
+            </article>
+
+
+            <!-- الإجمالي -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        إجمالي الموتورات
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        6
+                    </strong>
+
+                    <span>
+                        موتور
+                    </span>
+
+                </div>
+
+                <p>
+                    جميع الموتورات
+                </p>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =================================
+             Search & Filters
+        ================================== -->
+
+        <section class="motor-filter">
+
+
+            <form>
+
+
+                <!-- البحث -->
+
+                <div class="search-box">
+
+                    <label for="motor-search">
+                        البحث
+                    </label>
+
+                    <input
+                        type="search"
+                        id="motor-search"
+                        name="search"
+                        placeholder="ابحث باسم الموتور أو رقم الشاسيه..."
+                    >
+
+                </div>
+
+
+
+                <!-- الماركة -->
+
+                <div class="filter-box">
+
+                    <label for="motor-brand">
+                        الماركة
+                    </label>
+
+                    <select
+                        id="motor-brand"
+                        name="brand"
+                    >
+
+                        <option value="">
+                            كل الماركات
+                        </option>
+
+                        <option value="honda">
+                            Honda
+                        </option>
+
+                        <option value="yamaha">
+                            Yamaha
+                        </option>
+
+                        <option value="suzuki">
+                            Suzuki
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- سنة الصنع -->
+
+                <div class="filter-box">
+
+                    <label for="motor-year">
+                        سنة الصنع
+                    </label>
+
+                    <select
+                        id="motor-year"
+                        name="year"
+                    >
+
+                        <option value="">
+                            كل السنوات
+                        </option>
+
+                        <option value="2026">
+                            2026
+                        </option>
+
+                        <option value="2025">
+                            2025
+                        </option>
+
+                        <option value="2024">
+                            2024
+                        </option>
+
+                        <option value="2023">
+                            2023
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- الحالة -->
+
+                <div class="filter-box">
+
+                    <label for="motor-status">
+                        الحالة
+                    </label>
+
+                    <select
+                        id="motor-status"
+                        name="status"
+                    >
+
+                        <option value="">
+                            كل الحالات
+                        </option>
+
+                        <option value="available">
+                            متاح
+                        </option>
+
+                        <option value="sold">
+                            مباع
+                        </option>
+
+                        <option value="maintenance">
+                            صيانة
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- إعادة الضبط -->
+
+                <div class="filter-action">
+
+                    <button type="reset">
+                        إعادة الضبط
+                    </button>
+
+                </div>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =================================
+             Motors Table
+        ================================== -->
+
+        <section class="dashboard-card motor-table">
+
+
+            <!-- عنوان الجدول -->
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        قائمة الموتورات
+                    </h2>
+
+                    <p>
+                        جميع الموتورات المسجلة في النظام
+                    </p>
+
+                </div>
+
+
+                <span>
+                    عدد الموتورات: 6
+                </span>
+
+            </div>
+
+
+
+            <!-- الجدول -->
+
+            <div class="table-container">
+
+                <table>
+
+
+                    <!-- رأس الجدول -->
+
+                    <thead>
+
+                        <tr>
+
+                            <th scope="col">
+                                #
+                            </th>
+
+                            <th scope="col">
+                                الماركة
+                            </th>
+
+                            <th scope="col">
+                                الموديل
+                            </th>
+
+                            <th scope="col">
+                                رقم الموتور
+                            </th>
+
+                            <th scope="col">
+                                رقم الشاسيه
+                            </th>
+
+                            <th scope="col">
+                                سنة الصنع
+                            </th>
+
+                            <th scope="col">
+                                اللون
+                            </th>
+
+                            <th scope="col">
+                                قوة المحرك
+                            </th>
+
+                            <th scope="col">
+                                سعر الشراء
+                            </th>
+
+                            <th scope="col">
+                                سعر البيع
+                            </th>
+
+                            <th scope="col">
+                                الحالة
+                            </th>
+
+                            <th scope="col">
+                                الإجراءات
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+
+                    <!-- بيانات الموتورات -->
+
+                    <tbody>
+
+
+                        <!-- Motor 1 -->
+
+                        <tr>
+
+                            <td>
+                                1
+                            </td>
+
+                            <td>
+                                Honda
+                            </td>
+
+                            <td>
+                                CD 125
+                            </td>
+
+                            <td>
+                                ENG001
+                            </td>
+
+                            <td>
+                                CHS001001
+                            </td>
+
+                            <td>
+                                2025
+                            </td>
+
+                            <td>
+                                أحمر
+                            </td>
+
+                            <td>
+                                125 CC
+                            </td>
+
+                            <td>
+                                20,000,000
+                            </td>
+
+                            <td>
+                                25,000,000
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    متاح
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button type="button">
+                                    عرض
+                                </button>
+
+                                <button type="button">
+                                    تعديل
+                                </button>
+
+                                <button type="button">
+                                    طباعة
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Motor 2 -->
+
+                        <tr>
+
+                            <td>
+                                2
+                            </td>
+
+                            <td>
+                                Honda
+                            </td>
+
+                            <td>
+                                CD 125
+                            </td>
+
+                            <td>
+                                ENG002
+                            </td>
+
+                            <td>
+                                CHS001002
+                            </td>
+
+                            <td>
+                                2025
+                            </td>
+
+                            <td>
+                                أسود
+                            </td>
+
+                            <td>
+                                125 CC
+                            </td>
+
+                            <td>
+                                20,000,000
+                            </td>
+
+                            <td>
+                                25,000,000
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    متاح
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button type="button">
+                                    عرض
+                                </button>
+
+                                <button type="button">
+                                    تعديل
+                                </button>
+
+                                <button type="button">
+                                    طباعة
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Motor 3 -->
+
+                        <tr>
+
+                            <td>
+                                3
+                            </td>
+
+                            <td>
+                                Yamaha
+                            </td>
+
+                            <td>
+                                YBR 125
+                            </td>
+
+                            <td>
+                                ENG003
+                            </td>
+
+                            <td>
+                                CHS001003
+                            </td>
+
+                            <td>
+                                2024
+                            </td>
+
+                            <td>
+                                أزرق
+                            </td>
+
+                            <td>
+                                125 CC
+                            </td>
+
+                            <td>
+                                22,000,000
+                            </td>
+
+                            <td>
+                                27,000,000
+                            </td>
+
+                            <td>
+
+                                <span class="status sold">
+                                    مباع
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button type="button">
+                                    عرض
+                                </button>
+
+                                <button type="button">
+                                    تفاصيل البيع
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Motor 4 -->
+
+                        <tr>
+
+                            <td>
+                                4
+                            </td>
+
+                            <td>
+                                Suzuki
+                            </td>
+
+                            <td>
+                                GN 125
+                            </td>
+
+                            <td>
+                                ENG004
+                            </td>
+
+                            <td>
+                                CHS001004
+                            </td>
+
+                            <td>
+                                2024
+                            </td>
+
+                            <td>
+                                أسود
+                            </td>
+
+                            <td>
+                                125 CC
+                            </td>
+
+                            <td>
+                                21,000,000
+                            </td>
+
+                            <td>
+                                26,000,000
+                            </td>
+
+                            <td>
+
+                                <span class="status maintenance">
+                                    صيانة
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button type="button">
+                                    عرض
+                                </button>
+
+                                <button type="button">
+                                    تعديل
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Motor 5 -->
+
+                        <tr>
+
+                            <td>
+                                5
+                            </td>
+
+                            <td>
+                                Honda
+                            </td>
+
+                            <td>
+                                CD 150
+                            </td>
+
+                            <td>
+                                ENG005
+                            </td>
+
+                            <td>
+                                CHS001005
+                            </td>
+
+                            <td>
+                                2026
+                            </td>
+
+                            <td>
+                                أبيض
+                            </td>
+
+                            <td>
+                                150 CC
+                            </td>
+
+                            <td>
+                                28,000,000
+                            </td>
+
+                            <td>
+                                34,000,000
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    متاح
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button type="button">
+                                    عرض
+                                </button>
+
+                                <button type="button">
+                                    تعديل
+                                </button>
+
+                                <button type="button">
+                                    طباعة
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Motor 6 -->
+
+                        <tr>
+
+                            <td>
+                                6
+                            </td>
+
+                            <td>
+                                Yamaha
+                            </td>
+
+                            <td>
+                                YBR 150
+                            </td>
+
+                            <td>
+                                ENG006
+                            </td>
+
+                            <td>
+                                CHS001006
+                            </td>
+
+                            <td>
+                                2026
+                            </td>
+
+                            <td>
+                                أحمر
+                            </td>
+
+                            <td>
+                                150 CC
+                            </td>
+
+                            <td>
+                                30,000,000
+                            </td>
+
+                            <td>
+                                36,000,000
+                            </td>
+
+                            <td>
+
+                                <span class="status available">
+                                    متاح
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <button type="button">
+                                    عرض
+                                </button>
+
+                                <button type="button">
+                                    تعديل
+                                </button>
+
+                                <button type="button">
+                                    طباعة
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

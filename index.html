@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>لوحة التحكم - إدارة محل الموتورات</title>
+
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         القائمة الجانبية
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <!-- معلومات المحل -->
+        <div class="shop-info">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <h1>
+                Management Shop
+            </h1>
+
+            <p>
+                نظام إدارة محل الموتورات
+            </p>
+
+        </div>
+
+
+        <!-- القائمة -->
+        <nav class="dashboard">
+
+            <h2>
+                القائمة الرئيسية
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        لوحة التحكم
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_mot.html">
+                        الموتورات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_custemer.html">
+                        العملاء
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_sales.html">
+                        المبيعات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_payments.html">
+                        المدفوعات والديون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_inventory.html">
+                        المخزون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="manger_reports.html">
+                        التقارير
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sitting.html">
+                        الإعدادات
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- تسجيل الخروج -->
+            <div class="logout">
+
+                <a href="#">
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         المحتوى الرئيسي
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- رأس الصفحة -->
+
+        <header class="page-header">
+
+            <div>
+
+                <h2>
+                    لوحة التحكم
+                </h2>
+
+                <p>
+                    مرحباً بك في نظام إدارة محل الموتورات
+                </p>
+
+            </div>
+
+
+            <div class="user-info">
+
+                <span>
+                    المستخدم
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             البطاقات الإحصائية
+        ========================== -->
+
+        <section class="statistics">
+
+            <!-- المبيعات اليومية -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        إجمالي المبيعات اليومية
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        0
+                    </strong>
+
+                    <span>
+                        جنيه
+                    </span>
+
+                </div>
+
+                <p>
+                    مبيعات اليوم
+                </p>
+
+            </article>
+
+
+            <!-- مبيعات الشهر -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        مبيعات هذا الشهر
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        0
+                    </strong>
+
+                    <span>
+                        جنيه
+                    </span>
+
+                </div>
+
+                <p>
+                    إجمالي مبيعات الشهر
+                </p>
+
+            </article>
+
+
+            <!-- عدد الموتورات -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        عدد الموتورات
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        55
+                    </strong>
+
+                    <span>
+                        موتور
+                    </span>
+
+                </div>
+
+                <p>
+                    إجمالي الموتورات
+                </p>
+
+            </article>
+
+
+            <!-- الموتورات المتوفرة -->
+
+            <article class="card">
+
+                <div class="card-title">
+
+                    <h3>
+                        الموتورات المتوفرة
+                    </h3>
+
+                </div>
+
+                <div class="card-value">
+
+                    <strong>
+                        38
+                    </strong>
+
+                    <span>
+                        موتور
+                    </span>
+
+                </div>
+
+                <p>
+                    جاهزة للبيع
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             محتوى لوحة التحكم
+        ========================== -->
+
+        <section class="dashboard-content">
+
+
+            <!-- الموتورات قليلة المخزون -->
+
+            <article class="dashboard-card">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            أقل الموتورات في المخزون
+                        </h2>
+
+                        <p>
+                            الموتورات التي تحتاج إلى إعادة التوفير
+                        </p>
+
+                    </div>
+
+                    <a href="manger_inventory.html">
+                        عرض الكل
+                    </a>
+
+                </div>
+
+
+                <!-- جدول الموتورات -->
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    النوع
+                                </th>
+
+                                <th>
+                                    الموديل
+                                </th>
+
+                                <th>
+                                    المتوفر
+                                </th>
+
+                                <th>
+                                    الحد الأدنى
+                                </th>
+
+                                <th>
+                                    الحالة
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Honda
+                                </td>
+
+                                <td>
+                                    CD 125
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    منخفض
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Yamaha
+                                </td>
+
+                                <td>
+                                    YBR 125
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    منخفض
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Suzuki
+                                </td>
+
+                                <td>
+                                    GN 125
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    منخفض
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 آخر المبيعات
+            ========================== -->
+
+            <article class="dashboard-card">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            آخر المبيعات
+                        </h2>
+
+                        <p>
+                            أحدث عمليات البيع
+                        </p>
+
+                    </div>
+
+                    <a href="manger_sales.html">
+                        عرض الكل
+                    </a>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    رقم الفاتورة
+                                </th>
+
+                                <th>
+                                    العميل
+                                </th>
+
+                                <th>
+                                    الموتور
+                                </th>
+
+                                <th>
+                                    المبلغ
+                                </th>
+
+                                <th>
+                                    التاريخ
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    #1001
+                                </td>
+
+                                <td>
+                                    أحمد محمد
+                                </td>
+
+                                <td>
+                                    Honda CD 125
+                                </td>
+
+                                <td>
+                                    30,000,000
+                                </td>
+
+                                <td>
+                                    2026/08/24
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    #1002
+                                </td>
+
+                                <td>
+                                    محمد علي
+                                </td>
+
+                                <td>
+                                    Yamaha YBR
+                                </td>
+
+                                <td>
+                                    28,000,000
+                                </td>
+
+                                <td>
+                                    2026/08/23
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

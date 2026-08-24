@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        إضافة دفعة موتورات - إدارة محل الموتورات
+    </title>
+
+    <link rel="stylesheet" href="../style/add_mot.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         Sidebar
+    ================================== -->
+
+    <aside class="sidebar">
+
+        <div class="shop-info">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <h1>
+                Management Shop
+            </h1>
+
+            <p>
+                نظام إدارة محل الموتورات
+            </p>
+
+        </div>
+
+
+        <nav class="dashboard">
+
+            <h2>
+                القائمة الرئيسية
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        لوحة التحكم
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../manger_mot.html">
+                        الموتورات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../manger_custemer.html">
+                        العملاء
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../manger_sales.html">
+                        المبيعات
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../manger_payments.html">
+                        المدفوعات والديون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        المخزون
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../manger_reports.html">
+                        التقارير
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../sitting.html">
+                        الإعدادات
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="logout">
+
+                <a href="#">
+                    تسجيل الخروج
+                </a>
+
+            </div>
+
+        </nav>
+
+    </aside>
+
+
+
+    <!-- =================================
+         Main Content
+    ================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================
+             Page Header
+        ================================== -->
+
+        <header class="page-header">
+
+            <div>
+
+                <h2>
+                    إضافة دفعة موتورات
+                </h2>
+
+                <p>
+
+                    <a href="index.html">
+                        الرئيسية
+                    </a>
+
+                    /
+
+                    <a href="manger_mot.html">
+                        الموتورات
+                    </a>
+
+                    /
+
+                    إضافة دفعة
+
+                </p>
+
+            </div>
+
+
+            <div class="page-actions">
+
+                <button type="button">
+                    حفظ الدفعة
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================
+             Batch Information
+        ================================== -->
+
+        <section class="batch-information">
+
+
+            <!-- =================================
+                 Common Prices
+            ================================== -->
+
+            <article class="form-card">
+
+                <h2>
+                    الأسعار المشتركة
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="purchase-price">
+                        سعر الشراء
+                    </label>
+
+                    <input
+                        id="purchase-price"
+                        type="number"
+                        placeholder="سعر الشراء"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="selling-price">
+                        سعر البيع
+                    </label>
+
+                    <input
+                        id="selling-price"
+                        type="number"
+                        placeholder="سعر البيع"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="tax">
+                        الضريبة
+                    </label>
+
+                    <input
+                        id="tax"
+                        type="number"
+                        placeholder="نسبة الضريبة"
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 Batch Information
+            ================================== -->
+
+            <article class="form-card">
+
+                <h2>
+                    معلومات الدفعة
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="brand">
+                        الماركة
+                    </label>
+
+                    <input
+                        id="brand"
+                        type="text"
+                        placeholder="مثال: Honda"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="model">
+                        الموديل
+                    </label>
+
+                    <input
+                        id="model"
+                        type="text"
+                        placeholder="مثال: CBR 250"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="engine-capacity">
+                        سعة المحرك
+                    </label>
+
+                    <input
+                        id="engine-capacity"
+                        type="text"
+                        placeholder="مثال: 250 CC"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="battery">
+                        البطارية
+                    </label>
+
+                    <input
+                        id="battery"
+                        type="text"
+                        placeholder="نوع البطارية"
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================
+                 Supplier Information
+            ================================== -->
+
+            <article class="form-card">
+
+                <h2>
+                    المورد والفاتورة
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="supplier">
+                        المورد
+                    </label>
+
+                    <input
+                        id="supplier"
+                        type="text"
+                        placeholder="اسم المورد"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="invoice">
+                        رقم الفاتورة
+                    </label>
+
+                    <input
+                        id="invoice"
+                        type="text"
+                        placeholder="رقم الفاتورة"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="purchase-date">
+                        تاريخ الشراء
+                    </label>
+
+                    <input
+                        id="purchase-date"
+                        type="date"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="notes">
+                        ملاحظات
+                    </label>
+
+                    <textarea
+                        id="notes"
+                        placeholder="اكتب ملاحظة"
+                    ></textarea>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =================================
+             Motors In Batch
+        ================================== -->
+
+        <section class="batch-motors dashboard-card">
+
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        قائمة الموتورات في الدفعة
+                    </h2>
+
+                    <p>
+                        أضف بيانات كل موتور في الدفعة
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="add-row"
+                >
+                    + إضافة صف
+                </button>
+
+            </div>
+
+
+
+            <!-- جدول الموتورات -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                #
+                            </th>
+
+                            <th>
+                                رقم الشاسيه
+                            </th>
+
+                            <th>
+                                سرعة المحرك
+                            </th>
+
+                            <th>
+                                اللون
+                            </th>
+
+                            <th>
+                                ملاحظة
+                            </th>
+
+                            <th>
+                                الإجراءات
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                1
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="رقم الشاسيه"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="سرعة المحرك"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="اللون"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="ملاحظة"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    type="button"
+                                    class="delete-row"
+                                >
+                                    حذف
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                2
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="رقم الشاسيه"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="سرعة المحرك"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="اللون"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <input
+                                    type="text"
+                                    placeholder="ملاحظة"
+                                >
+
+                            </td>
+
+                            <td>
+
+                                <button
+                                    type="button"
+                                    class="delete-row"
+                                >
+                                    حذف
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             Batch Summary
+        ================================== -->
+
+        <section class="batch-summary">
+
+
+            <article class="summary-card">
+
+                <h2>
+                    إجمالي عدد الموتورات
+                </h2>
+
+                <strong>
+                    10
+                </strong>
+
+                <span>
+                    موتور
+                </span>
+
+            </article>
+
+
+            <article class="summary-card">
+
+                <h2>
+                    إجمالي سعر الشراء
+                </h2>
+
+                <strong>
+                    60,000,000
+                </strong>
+
+                <span>
+                    جنيه
+                </span>
+
+            </article>
+
+
+            <article class="summary-card">
+
+                <h2>
+                    إجمالي سعر البيع
+                </h2>
+
+                <strong>
+                    95,000,000
+                </strong>
+
+                <span>
+                    جنيه
+                </span>
+
+            </article>
+
+
+            <article class="summary-card">
+
+                <h2>
+                    إجمالي الربح المتوقع
+                </h2>
+
+                <strong>
+                    25,000,000
+                </strong>
+
+                <span>
+                    جنيه
+                </span>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =================================
+             Bottom Actions
+        ================================== -->
+
+        <div class="bottom-actions">
+
+            <button type="button">
+                حفظ الدفعة
+            </button>
+
+            <button type="button">
+                حفظ كمسودة
+            </button>
+
+            <button type="button">
+                إلغاء
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>

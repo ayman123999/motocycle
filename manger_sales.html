@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/sales.css">
+    <title>المبيعات - نظام إدارة محل الموتورات</title>
+</head>
+
+<body>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="home">
+
+        <!-- معلومات المحل -->
+        <div class="shop-info">
+
+            <p>Logo</p>
+
+            <h1>Management Shop</h1>
+
+        </div>
+
+
+        <!-- القائمة -->
+        <nav class="dashBoard">
+
+            <h3>نظام إدارة محل الموتورات</h3>
+
+            <a href="index.html">
+                لوحة التحكم
+            </a>
+
+            <a href="manger_mot.html">
+                الموتورات
+            </a>
+
+            <a href="manger_custemer.html">
+                العملاء
+            </a>
+
+            <a href="manger_sales.html">
+                المبيعات
+            </a>
+
+            <a href="manger_payments.html">
+                المدفوعات والديون
+            </a>
+
+            <a href="manger_inventory.html">
+                المخزون
+            </a>
+
+            <a href="manger_reports.html">
+                التقارير
+            </a>
+
+            <a href="sitting.html">
+                الإعدادات
+            </a>
+
+            <a href="#">
+                تسجيل الخروج
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
+        <header class="page-header">
+
+            <div>
+
+                <h2>المبيعات</h2>
+
+                <p>
+                    <a href="index.html">الرئيسية</a>
+                    /
+                    <a href="manger_sales.html">المبيعات</a>
+                    /
+                    بيع جديد
+                </p>
+
+            </div>
+                <a href="section_move/add_mot.html">
+                        <button type="button">
+                        إضافة موتور جديد
+                        </button>
+                </a>
+
+        </header>
+
+
+
+        <!-- =========================
+             SALES STATISTICS
+        ========================== -->
+
+        <section class="card">
+
+            <div>
+
+                <p>إجمالي مبيعات اليوم</p>
+
+                <p>
+                    12,000,000
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>إجمالي الخصومات اليوم</p>
+
+                <p>
+                    500
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>عدد عمليات اليوم</p>
+
+                <p>
+                    3
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>إجمالي المبيعات اليوم</p>
+
+                <p>
+                    20,000,000
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SALES AREA
+        ========================== -->
+
+        <section class="buy">
+
+
+            <!-- =========================
+                 LEFT SIDE
+            ========================== -->
+
+            <div class="select_mot">
+
+
+                <!-- البحث عن الموتور -->
+
+                <div class="search-motor">
+
+                    <h2>
+                        اختيار الموتور
+                    </h2>
+
+                    <input
+                        type="search"
+                        placeholder="بحث باسم الموديل أو رقم الشاسيه"
+                    >
+
+                </div>
+
+
+
+                <!-- فلاتر -->
+
+                <div class="motor-filters">
+
+                    <select>
+
+                        <option value="">
+                            كل الماركات
+                        </option>
+
+                        <option value="honda">
+                            Honda
+                        </option>
+
+                        <option value="yamaha">
+                            Yamaha
+                        </option>
+
+                        <option value="suzuki">
+                            Suzuki
+                        </option>
+
+                    </select>
+
+
+                    <select>
+
+                        <option value="">
+                            كل الموديلات
+                        </option>
+
+                        <option value="cbr">
+                            CBR 250
+                        </option>
+
+                        <option value="cd">
+                            CD 70
+                        </option>
+
+                    </select>
+
+
+                    <select>
+
+                        <option value="">
+                            كل الألوان
+                        </option>
+
+                        <option value="red">
+                            أحمر
+                        </option>
+
+                        <option value="black">
+                            أسود
+                        </option>
+
+                        <option value="white">
+                            أبيض
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- =========================
+                     MOTOR CARD
+                ========================== -->
+
+                <article class="motor-card">
+
+                    <img
+                        src=""
+                        alt="صورة الموتور"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Honda CBR 250 2023
+                        </h3>
+
+                        <span>
+                            متوفر
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        رقم الشاسيه:
+                        <strong>
+                            CH-00123
+                        </strong>
+                    </p>
+
+
+                    <p>
+                        اللون:
+                        <strong>
+                            أسود
+                        </strong>
+                    </p>
+
+
+                    <p>
+                        سعر البيع:
+                        <strong>
+                            9,500,000
+                        </strong>
+                    </p>
+
+
+                    <button type="button">
+                        إضافة للمبيعات
+                    </button>
+
+                </article>
+
+
+
+                <!-- =========================
+                     CUSTOMER INFORMATION
+                ========================== -->
+
+                <section class="customer-info">
+
+                    <h2>
+                        بيانات العميل
+                    </h2>
+
+
+                    <form>
+
+                        <div>
+
+                            <label for="customer-name">
+                                اسم العميل
+                            </label>
+
+                            <input
+                                id="customer-name"
+                                type="text"
+                                placeholder="أدخل اسم العميل"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="phone">
+                                رقم الهاتف
+                            </label>
+
+                            <input
+                                id="phone"
+                                type="tel"
+                                placeholder="09xxxxxxxx"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="national-id">
+                                رقم الهوية
+                            </label>
+
+                            <input
+                                id="national-id"
+                                type="text"
+                                placeholder="رقم الهوية"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="address">
+                                السكن
+                            </label>
+
+                            <input
+                                id="address"
+                                type="text"
+                                placeholder="عنوان العميل"
+                            >
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
+            <div class="invoice-area">
+
+
+                <!-- =========================
+                     PRICE SUMMARY
+                ========================== -->
+
+                <section class="summary">
+
+                    <h2>
+                        ملخص المبلغ
+                    </h2>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            إجمالي الأسعار
+                        </span>
+
+                        <strong>
+                            25,000,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            إجمالي الخصم
+                        </span>
+
+                        <strong>
+                            300,000
+                        </strong>
+
+                    </div>
+
+
+                    <hr>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            بعد الخصم
+                        </span>
+
+                        <strong>
+                            24,700,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            الضريبة (%15)
+                        </span>
+
+                        <strong>
+                            3,705,000
+                        </strong>
+
+                    </div>
+
+
+                    <hr>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            الإجمالي النهائي
+                        </span>
+
+                        <strong>
+                            28,405,000
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================
+                     PAYMENT
+                ========================== -->
+
+                <section class="payment">
+
+                    <h2>
+                        الدفع
+                    </h2>
+
+
+                    <div class="payment-row">
+
+                        <span>
+                            المبلغ المدفوع
+                        </span>
+
+                        <strong>
+                            20,000,000
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-row">
+
+                        <span>
+                            المتبقي
+                        </span>
+
+                        <strong>
+                            8,405,000
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================
+                     INVOICE ITEMS
+                ========================== -->
+
+                <section class="invoice-items">
+
+                    <div class="section-title">
+
+                        <h2>
+                            المنتجات في الفاتورة
+                        </h2>
+
+                        <button type="button">
+                            تفريغ الفاتورة
+                        </button>
+
+                    </div>
+
+
+                    <table>
+
+                        <caption>
+                            بيانات الفاتورة
+                        </caption>
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>#</th>
+
+                                <th>
+                                    الموتور
+                                </th>
+
+                                <th>
+                                    رقم الشاسيه
+                                </th>
+
+                                <th>
+                                    السعر
+                                </th>
+
+                                <th>
+                                    الخصم
+                                </th>
+
+                                <th>
+                                    الإجمالي
+                                </th>
+
+                                <th>
+                                    إجراء
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    Honda CBR 250
+                                </td>
+
+                                <td>
+                                    CH-00123
+                                </td>
+
+                                <td>
+                                    25,000,000
+                                </td>
+
+                                <td>
+                                    300,000
+                                </td>
+
+                                <td>
+                                    24,700,000
+                                </td>
+
+                                <td>
+
+                                    <button type="button">
+                                        حذف
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+
+
+                <!-- =========================
+                     SALE INFORMATION
+                ========================== -->
+
+                <section class="sale-info">
+
+                    <h2>
+                        بيانات البيع
+                    </h2>
+
+
+                    <form>
+
+
+                        <div>
+
+                            <label for="sale-date">
+                                تاريخ البيع
+                            </label>
+
+                            <input
+                                id="sale-date"
+                                type="date"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="employee">
+                                الموظف
+                            </label>
+
+                            <input
+                                id="employee"
+                                type="text"
+                                placeholder="اسم الموظف"
+                            >
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="payment-method">
+                                طريقة الدفع
+                            </label>
+
+                            <select id="payment-method">
+
+                                <option value="cash">
+                                    نقدًا
+                                </option>
+
+                                <option value="bank">
+                                    تحويل بنكي
+                                </option>
+
+                                <option value="installment">
+                                    تقسيط
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="notes">
+                                ملاحظات
+                            </label>
+
+                            <textarea
+                                id="notes"
+                                placeholder="أدخل ملاحظات البيع"
+                            ></textarea>
+
+                        </div>
+
+
+                    </form>
+
+                </section>
+
+
+
+                <!-- =========================
+                     ACTIONS
+                ========================== -->
+
+                <div class="sale-actions">
+
+                    <button
+                        type="button"
+                    >
+                        إتمام البيع
+                    </button>
+
+
+                    <button
+                        type="button"
+                    >
+                        حفظ كمسودة
+                    </button>
+
+
+                    <button
+                        type="button"
+                    >
+                        إلغاء
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

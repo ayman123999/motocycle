@@ -1,0 +1,1054 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+body {
+    direction: rtl;
+    background: #f5f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.home {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    background: #172033;
+    color: white;
+
+    overflow-y: auto;
+}
+
+
+/* معلومات المحل */
+
+.shop-info {
+    padding: 25px 20px;
+    text-align: center;
+
+    border-bottom: 1px solid #29354a;
+}
+
+.shop-info p {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+    border-radius: 12px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.shop-info h1 {
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   SIDEBAR MENU
+===================================================== */
+
+.dashBoard {
+    padding: 20px 15px;
+}
+
+.dashBoard h3 {
+    color: #8d99aa;
+
+    font-size: 11px;
+
+    margin-bottom: 15px;
+
+    padding-right: 8px;
+}
+
+
+/* الرابط */
+
+.dashBoard a {
+    display: block;
+
+    padding: 12px 14px;
+    margin-bottom: 5px;
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+/* Hover */
+
+.dashBoard a:hover {
+    background: #243047;
+    color: white;
+}
+
+
+/* صفحة المبيعات الحالية */
+
+.dashBoard a:nth-of-type(4) {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* تسجيل الخروج */
+
+.dashBoard a:last-child {
+    margin-top: 25px;
+
+    border-top: 1px solid #29354a;
+
+    border-radius: 0;
+
+    color: #fca5a5;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.main-content {
+    margin-right: 250px;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.page-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.page-header h2 {
+    font-size: 25px;
+
+    color: #111827;
+
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+.page-header p a {
+    color: #2563eb;
+
+    text-decoration: none;
+}
+
+
+/* زر إضافة موتور */
+
+.page-header > button {
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.page-header > button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.card {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.card > div {
+    background: white;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+
+    transition: 0.2s;
+}
+
+.card > div:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card p:first-child {
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+}
+
+.card p:last-child {
+    color: #111827;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SALES AREA
+===================================================== */
+
+.buy {
+    display: grid;
+
+    grid-template-columns: 1.1fr 1fr;
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.select_mot {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =====================================================
+   SEARCH MOTOR
+===================================================== */
+
+.search-motor {
+    background: white;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.search-motor h2 {
+    font-size: 16px;
+
+    color: #111827;
+
+    margin-bottom: 15px;
+}
+
+.search-motor input {
+    width: 100%;
+
+    height: 43px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    background: #fff;
+}
+
+.search-motor input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =====================================================
+   MOTOR FILTERS
+===================================================== */
+
+.motor-filters {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.motor-filters select {
+    height: 40px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    outline: none;
+}
+
+.motor-filters select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =====================================================
+   MOTOR CARD
+===================================================== */
+
+.motor-card {
+    background: white;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+/* صورة الموتور */
+
+.motor-card img {
+    width: 100%;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* اسم الموتور */
+
+.motor-card h3 {
+    display: inline-block;
+
+    color: #111827;
+
+    font-size: 17px;
+
+    margin-left: 10px;
+}
+
+
+/* الحالة */
+
+.motor-card span {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #ecfdf5;
+
+    color: #059669;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+
+/* بيانات الموتور */
+
+.motor-card p {
+    color: #64748b;
+
+    font-size: 12px;
+
+    margin-top: 12px;
+}
+
+.motor-card strong {
+    color: #1f2937;
+}
+
+
+/* السعر */
+
+.motor-card p:last-of-type {
+    color: #2563eb;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin-top: 18px;
+}
+
+
+/* زر إضافة */
+
+.motor-card button {
+    width: 100%;
+
+    height: 42px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.motor-card button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =====================================================
+   CUSTOMER
+===================================================== */
+
+.customer-info {
+    background: white;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.customer-info h2 {
+    font-size: 16px;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+.customer-info form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.customer-info form div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.customer-info label {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.customer-info input {
+    height: 40px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 12px;
+}
+
+.customer-info input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+===================================================== */
+
+.invoice-area {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* كل أقسام الفاتورة */
+
+.invoice-area > section {
+    background: white;
+
+    border: 1px solid #e8ebf0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.summary h2 {
+    font-size: 17px;
+
+    color: #111827;
+
+    margin-bottom: 18px;
+}
+
+.summary-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 9px 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.summary-row strong {
+    color: #374151;
+}
+
+.summary hr {
+    border: none;
+
+    border-top: 1px solid #edf0f4;
+
+    margin: 8px 0;
+}
+
+
+/* الإجمالي النهائي */
+
+.summary-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 5px;
+
+    padding: 15px;
+
+    background: #eff6ff;
+
+    border-radius: 8px;
+}
+
+.summary-total span {
+    color: #475569;
+
+    font-size: 12px;
+}
+
+.summary-total strong {
+    color: #2563eb;
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   PAYMENT
+===================================================== */
+
+.payment h2 {
+    color: #111827;
+
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+.payment-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 10px 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.payment-row strong {
+    color: #111827;
+
+    font-size: 15px;
+}
+
+
+/* المتبقي */
+
+.payment-row:last-child strong {
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   INVOICE ITEMS
+===================================================== */
+
+.invoice-items {
+    overflow-x: auto;
+}
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 16px;
+
+    color: #111827;
+}
+
+.section-title button {
+    padding: 7px 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   INVOICE TABLE
+===================================================== */
+
+.invoice-items table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+}
+
+.invoice-items caption {
+    text-align: right;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    margin-bottom: 10px;
+}
+
+.invoice-items th {
+    padding: 12px 10px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    text-align: right;
+
+    white-space: nowrap;
+}
+
+.invoice-items td {
+    padding: 13px 10px;
+
+    border-bottom: 1px solid #edf0f4;
+
+    color: #475569;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.invoice-items tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* زر حذف */
+
+.invoice-items td button {
+    border: none;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    padding: 5px 8px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   SALE INFORMATION
+===================================================== */
+
+.sale-info h2 {
+    color: #111827;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+.sale-info form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.sale-info form div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.sale-info label {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+.sale-info input,
+.sale-info select,
+.sale-info textarea {
+    width: 100%;
+
+    border: 1px solid #d9dee7;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: white;
+
+    font-family: inherit;
+
+    font-size: 12px;
+}
+
+.sale-info input,
+.sale-info select {
+    height: 40px;
+
+    padding: 0 10px;
+}
+
+.sale-info textarea {
+    height: 40px;
+
+    padding: 10px;
+
+    resize: vertical;
+}
+
+.sale-info input:focus,
+.sale-info select:focus,
+.sale-info textarea:focus {
+    border-color: #2563eb;
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.sale-actions {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 10px;
+}
+
+.sale-actions button {
+    height: 45px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* إتمام البيع */
+
+.sale-actions button:first-child {
+    background: #16a34a;
+
+    color: white;
+}
+
+.sale-actions button:first-child:hover {
+    background: #15803d;
+}
+
+
+/* حفظ */
+
+.sale-actions button:nth-child(2) {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+.sale-actions button:nth-child(2):hover {
+    background: #dbeafe;
+}
+
+
+/* إلغاء */
+
+.sale-actions button:last-child {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+.sale-actions button:last-child:hover {
+    background: #fee2e2;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buy {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .home {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+    .main-content {
+        margin-right: 0;
+
+        padding: 20px;
+    }
+
+    .page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .page-header > button {
+        width: 100%;
+    }
+
+    .card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .motor-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .customer-info form {
+        grid-template-columns: 1fr;
+    }
+
+    .sale-info form {
+        grid-template-columns: 1fr;
+    }
+
+    .sale-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h2 {
+        font-size: 21px;
+    }
+
+}
