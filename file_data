@@ -1,0 +1,135 @@
+customers
+suppliers
+
+motorcycle_models
+motorcycles
+
+purchases
+purchase_items
+
+sales
+sale_items
+
+payments
+
+expenses
+users
+
+
++++++++++++  customers ++++++++++++++++
+
+id
+name
+phone
+identity_number
+email
+address
+city
+notes
+created_at
+updated_at
+
+CREATE TABLE customers (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    identity_number VARCHAR(50),
+    address VARCHAR(255),
+    note VARCHAR(250),
+
+    created_at DATE DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+        ON UPDATE CURRENT_TIMESTAMP
+);
+
+
++++++++++++  motorcycle_models ++++++++++++++++
+id
+brand
+model_name
+model_year
+engine_capacity
+category
+description
++++++++++++  motorcycles ++++++++++++++++
+id
+model_id
+chassis_number
+engine_number
+color
+purchase_price
+selling_price
+supplier_id
+status
+purchase_date
+created_at
+
++++++++++++  purchases ++++++++++++++++
+
+purchases
+────────────
+id
+supplier_id
+purchase_date
+total_amount
+paid_amount
+remaining_amount
+notes
+
++++++++++++  purchase_items ++++++++++++++++
+
+purchase_items
+──────────────
+id
+purchase_id
+motorcycle_id
+purchase_price
+
++++++++++++  sales ++++++++++++++++
+
+id
+customer_id
+sale_date
+total_amount
+discount
+net_amount
+paid_amount
+remaining_amount
+status
+
++++++++++++  sales_items ++++++++++++++++
+
+id
+sale_id
+motorcycle_id
+selling_price
+discount
+
++++++++++++  payments ++++++++++++++++
+
+id
+sale_id
+amount
+payment_method
+payment_date
+reference
+notes
+
++++++++++++  expenses ++++++++++++++++
+
+id
+expense_type
+amount
+expense_date
+description
+user_id
+
++++++++++++  users ++++++++++++++++
+
+id
+name
+username
+password_hash
+role
+status
+created_at
